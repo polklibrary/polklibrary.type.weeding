@@ -210,7 +210,7 @@
                     </td>
                     
                     <td tal:condition="not:view/current_user_id">
-                        <a class="login-to-vote"  href="${view/portal/absolute_url}/login?came_from=${context/absolute_url}"></a>
+                        <a class="login-to-vote"  href="${view/portal/absolute_url}/login?came_from=${context/absolute_url}?${request/QUERY_STRING}"></a>
                     </td>
                     
                     <td tal:repeat="item python:row">${item}</td>
