@@ -16,8 +16,6 @@
     
         $(document).ready(function () {
         
-            if (document.location.href.includes('?phases=0')) 
-                document.querySelector('#phases').style = 'display: none';
 
             var tnav_height = $('#top-nav').outerHeight();
             var bnav_height = $('#bottom-nav').outerHeight();
@@ -173,6 +171,10 @@
                 <div id="phases">
                     <img src="${view/portal/absolute_url}/++plone++polklibrary.type.weeding/phases.png" alt="Phases" />
                 </div>
+                <script>
+                    if (document.location.href.includes('?phases=0')) 
+                        document.querySelector('#phases').style = 'display: none';
+                </script>
             </div>
             
             <div class="hright">
