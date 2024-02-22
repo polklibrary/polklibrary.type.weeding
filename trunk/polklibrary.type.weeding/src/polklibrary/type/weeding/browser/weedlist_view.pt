@@ -16,7 +16,9 @@
     
         $(document).ready(function () {
         
-            
+            if (document.location.href.includes('?phases=0')) 
+                document.querySelector('#phases').style = 'display: none';
+
             var tnav_height = $('#top-nav').outerHeight();
             var bnav_height = $('#bottom-nav').outerHeight();
             var window_height = $( window ).height();
